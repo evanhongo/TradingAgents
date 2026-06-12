@@ -278,6 +278,7 @@ def _llm_provider_table() -> list[tuple[str, str, str | None]]:
     localhost default when unset.
     """
     ollama_url = os.environ.get("OLLAMA_BASE_URL") or "http://localhost:11434/v1"
+    nine_router_url = os.environ.get("NINE_ROUTER_URL") or "http://localhost:20128/v1"
     return [
         ("OpenAI", "openai", "https://api.openai.com/v1"),
         ("Google", "google", None),
@@ -290,6 +291,7 @@ def _llm_provider_table() -> list[tuple[str, str, str | None]]:
         ("OpenRouter", "openrouter", "https://openrouter.ai/api/v1"),
         ("Azure OpenAI", "azure", None),
         ("Ollama", "ollama", ollama_url),
+        ("9Router", "9router", nine_router_url),
     ]
 
 

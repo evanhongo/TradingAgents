@@ -175,6 +175,14 @@ MODEL_OPTIONS: ProviderModeOptions = {
             ("Custom model ID", "custom"),
         ],
     },
+    "9router": {
+        "quick": [
+            ("Custom model ID", "custom"),
+        ],
+        "deep": [
+            ("Custom model ID", "custom"),
+        ],
+    },
 }
 
 
